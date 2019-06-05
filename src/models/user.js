@@ -11,7 +11,6 @@ const userinfo = JSON.parse(localStorage.getItem('userinfo')) || {
 function login(payload) {
     console.log(payload);
     return axios.post('/api/login', payload).then(({data}) => ({
-
         code: data.code,
         userinfo: data.data
     }))

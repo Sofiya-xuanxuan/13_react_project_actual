@@ -19,7 +19,8 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'user', ...(require('E:/2018-study/OneDrive/开课吧10期/myCode/12_React电商项目实战/umi-test/src/models/user.js').default) });
+  app.model({ namespace: 'cart', ...(require('E:/2018-study/OneDrive/开课吧10期/myCode/12_React电商项目实战/umi-test/src/models/cart.js').default) });
+app.model({ namespace: 'user', ...(require('E:/2018-study/OneDrive/开课吧10期/myCode/12_React电商项目实战/umi-test/src/models/user.js').default) });
 app.model({ namespace: 'goods', ...(require('E:/2018-study/OneDrive/开课吧10期/myCode/12_React电商项目实战/umi-test/src/pages/goods/models/goods.js').default) });
 }
 
